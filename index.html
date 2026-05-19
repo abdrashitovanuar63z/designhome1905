@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Traffic Lights System | Portfolio</title>
+  <meta name="description" content="AI Traffic Lights System - a smart traffic management project using AI and computer vision." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-yH1fw0VPU9eTt7QJxsYFK93bWe49m24dhSUV1iBozC3bY0WJ1+fGz2RE4uJdQKwA1+3phw9Kwg+0P4j49c3rNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="topbar">
+    <div class="container nav-container">
+      <a class="brand" href="#home">AI Traffic Lights</a>
+      <nav class="nav-links" id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#problem">Problem</a>
+        <a href="#research">Research</a>
+        <a href="#design">Design</a>
+        <a href="#development">Development</a>
+        <a href="#features">Features</a>
+        <a href="#reflection">Reflection</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">School Design Project</span>
+          <h1>AI Traffic Lights System</h1>
+          <p>Smart Traffic Management Powered by Artificial Intelligence.</p>
+          <p class="hero-description">An innovative system that uses AI and computer vision to analyze traffic in real time, reduce congestion, and prioritize emergency vehicles.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://design-aldiyar-lab.base44.app" target="_blank" rel="noreferrer">View Live Project</a>
+            <a class="btn btn-secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub Repository</a>
+          </div>
+        </div>
+        <div class="hero-panel reveal-delay">
+          <div class="stat-card">
+            <div>
+              <h2>Adaptive Signals</h2>
+              <p>AI adjusts timing based on real vehicle flow.</p>
+            </div>
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="visual-card">
+            <div class="visual-header">
+              <span>System Overview</span>
+              <div class="dot-group"><span></span><span></span><span></span></div>
+            </div>
+            <div class="traffic-sim">
+              <div class="light light-red"></div>
+              <div class="light light-yellow"></div>
+              <div class="light light-green"></div>
+            </div>
+            <p>Real-time analysis, emergency prioritization, and traffic optimization for smarter streets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section" id="problem">
+      <div class="container section-header reveal">
+        <span class="section-label">Problem / Need</span>
+        <h2>Problem / Need</h2>
+        <p>Traditional traffic lights use fixed timers and cannot adapt to real traffic conditions. This causes traffic jams, longer travel times, increased fuel consumption, air pollution, and delays for emergency vehicles. The project solves this by using artificial intelligence to monitor traffic and automatically adjust signal timing based on current road conditions.</p>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section bg-soft" id="research">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-label">Research Summary</span>
+          <h2>Research Summary</h2>
+        </div>
+        <div class="grid-2">
+          <div class="content-card">
+            <h3>Research included</h3>
+            <ul>
+              <li>Traditional traffic light systems</li>
+              <li>Artificial intelligence and computer vision</li>
+              <li>Smart city technologies</li>
+              <li>Environmental effects of traffic congestion</li>
+            </ul>
+          </div>
+          <div class="content-card">
+            <h3>Key findings</h3>
+            <ul>
+              <li>Fixed-time traffic lights are inefficient.</li>
+              <li>AI can detect vehicles in real time.</li>
+              <li>Adaptive traffic control reduces congestion and waiting times.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Brief Section -->
+    <section class="section" id="design">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-label">Design Brief</span>
+          <h2>Design Brief</h2>
+        </div>
+        <div class="grid-2">
+          <div class="content-card">
+            <p>Create a prototype of an AI-based traffic light system that changes red and green light durations depending on the number of vehicles detected.</p>
+            <h3>Target Users</h3>
+            <ul>
+              <li>Drivers</li>
+              <li>Pedestrians</li>
+              <li>Emergency services</li>
+              <li>City traffic departments</li>
+            </ul>
+          </div>
+          <div class="content-card">
+            <h3>Goal</h3>
+            <p>Reduce congestion and improve traffic efficiency and safety.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Criteria Section -->
+    <section class="section bg-soft" id="development">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-label">Success Criteria</span>
+          <h2>Success Criteria</h2>
+        </div>
+        <div class="card-grid">
+          <article class="feature-card"><i class="fas fa-video"></i><h3>Detect vehicles in real time</h3></article>
+          <article class="feature-card"><i class="fas fa-clock"></i><h3>Automatically adjust green light duration</h3></article>
+          <article class="feature-card"><i class="fas fa-ambulance"></i><h3>Prioritize emergency vehicles</h3></article>
+          <article class="feature-card"><i class="fas fa-road"></i><h3>Reduce waiting times</h3></article>
+          <article class="feature-card"><i class="fas fa-chart-line"></i><h3>Improve traffic flow</h3></article>
+          <article class="feature-card"><i class="fas fa-mobile-alt"></i><h3>Work on desktop and mobile devices</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Ideas Section -->
+    <section class="section" id="features">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-label">Design Ideas</span>
+          <h2>Design Ideas</h2>
+        </div>
+        <div class="card-grid">
+          <article class="idea-card reveal"><h3>Sensor-based system</h3><p>Traffic sensors detect flow at each lane to optimize the signals.</p></article>
+          <article class="idea-card reveal"><h3>Camera-based AI detection</h3><p>Computer vision identifies vehicles and predicts congestion patterns.</p></article>
+          <article class="idea-card reveal highlight"><h3>Smart dashboard with analytics</h3><p>Monitors real traffic data and controls signal timing in real time.</p></article>
+        </div>
+        <div class="workflow-card reveal-delay">
+          <h3>Chosen Design</h3>
+          <p>A camera-based AI system using computer vision and a dashboard to monitor traffic and control signal timing.</p>
+          <h4>Workflow</h4>
+          <div class="workflow">
+            <span>Camera</span>
+            <i class="fas fa-arrow-right"></i>
+            <span>AI Detection</span>
+            <i class="fas fa-arrow-right"></i>
+            <span>Traffic Controller</span>
+            <i class="fas fa-arrow-right"></i>
+            <span>Traffic Lights</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Process Section -->
+    <section class="section bg-soft" id="development-process">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-label">Development Process</span>
+          <h2>Development Process</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-card reveal">
+            <h3>Alpha Version</h3>
+            <div class="stage-photo" role="img" aria-label="Alpha stage photo">
+              <i class="fas fa-image stage-icon"></i>
+              <span class="stage-badge">Alpha</span>
+            </div>
+            <ul>
+              <li>Basic concept and interface</li>
+              <li>Manual traffic input</li>
+              <li>Simple traffic light simulation</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card reveal">
+            <h3>Beta Version</h3>
+            <div class="stage-photo" role="img" aria-label="Beta stage photo">
+              <i class="fas fa-image stage-icon"></i>
+              <span class="stage-badge">Beta</span>
+            </div>
+            <ul>
+              <li>Added AI-based vehicle counting</li>
+              <li>Improved dashboard</li>
+              <li>Better visual indicators</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card reveal">
+            <h3>Final Version</h3>
+            <div class="stage-photo" role="img" aria-label="Final stage photo">
+              <i class="fas fa-image stage-icon"></i>
+              <span class="stage-badge">Final</span>
+            </div>
+            <ul>
+              <li>Responsive design</li>
+              <li>Emergency vehicle priority</li>
+              <li>Cleaner interface and better performance</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="section" id="key-features">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-label">Key Features</span>
+          <h2>Key Features</h2>
+        </div>
+        <div class="grid-2">
+          <article class="feature-detail reveal"><h3>Real-time Vehicle Detection</h3><p>The system uses cameras and AI to detect cars, buses, trucks, and motorcycles in real time.</p></article>
+          <article class="feature-detail reveal"><h3>Automatic Signal Timing Adjustment</h3><p>The AI changes green light duration based on traffic density.</p></article>
+          <article class="feature-detail reveal"><h3>Emergency Vehicle Priority</h3><p>Ambulances, police, and fire trucks automatically receive a green light.</p></article>
+          <article class="feature-detail reveal"><h3>Traffic Analytics Dashboard</h3><p>Displays live traffic data, vehicle counts, and waiting times.</p></article>
+          <article class="feature-detail reveal"><h3>Responsive Interface</h3><p>Works perfectly on desktops, tablets, and smartphones.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demonstration Section -->
+    <section class="section bg-soft" id="demonstration">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-label">Demonstration</span>
+          <h2>Demonstration</h2>
+        </div>
+        <div class="card-grid">
+          <article class="demo-card reveal"><i class="fas fa-tv"></i><h3>Main Dashboard</h3></article>
+          <article class="demo-card reveal"><i class="fas fa-tachometer-alt"></i><h3>Traffic Density Indicators</h3></article>
+          <article class="demo-card reveal"><i class="fas fa-sync-alt"></i><h3>Signal Timing Changes</h3></article>
+          <article class="demo-card reveal"><i class="fas fa-shield-alt"></i><h3>Emergency Mode</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflection Section -->
+    <section class="section" id="reflection">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-label">Reflection</span>
+          <h2>Reflection</h2>
+        </div>
+        <div class="grid-2">
+          <div class="content-card">
+            <h3>What I Learned</h3>
+            <ul>
+              <li>How AI can solve real-world problems</li>
+              <li>How to design and prototype a smart system</li>
+              <li>How feedback improves a product</li>
+            </ul>
+          </div>
+          <div class="content-card">
+            <h3>Biggest Challenge</h3>
+            <p>Designing a realistic AI system and presenting technical ideas clearly.</p>
+            <h3>Most Useful Feedback</h3>
+            <p>Users suggested adding emergency vehicle priority and improving the dashboard.</p>
+          </div>
+        </div>
+        <div class="future-card reveal-delay">
+          <h3>Future Improvements</h3>
+          <ul>
+            <li>Pedestrian recognition</li>
+            <li>GPS integration</li>
+            <li>Multi-intersection city deployment</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section bg-soft" id="contact">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-label">Project Links</span>
+          <h2>Contact / Links</h2>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-card reveal"><h3>Live Project</h3><a href="https://design-aldiyar-lab.base44.app" target="_blank" rel="noreferrer">Visit Live Site</a></article>
+          <article class="contact-card reveal"><h3>GitHub Repository</h3><a href="https://github.com/" target="_blank" rel="noreferrer">View Code</a></article>
+          <article class="contact-card reveal"><h3>Student Name</h3><p>Aldiyar</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Back to top button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2025 Aldiyar — AI Traffic Lights System</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
+</body>
+</html>
